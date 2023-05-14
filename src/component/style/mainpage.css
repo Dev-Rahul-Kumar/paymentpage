@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.contents {
+    background-image: url('../image/Back\ GroundBackground.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    width: 1360px;
+    height: 1008px;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.contents .lefts {
+    position: absolute;
+    width: 546px;
+    height: 708px;
+    left: 75px;
+    top: 72px;
+    /* border: 1px solid red; */
+    padding: 30px;
+}
+
+.contents .lefts .font {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.contents .lefts .linedecor {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.contents .lefts .color {
+    color: #0096FF;
+
+}
+
+.contents .lefts ul {
+    list-style-type: none;
+}
+
+.contents .lefts ul .li {
+    width: 433px;
+    height: 32px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+}
+
+.contents .lefts ul .li {
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 60px;
+}
+
+.contents .list li::before {
+    content: "";
+    position: absolute;
+    top: 13%;
+    left: 0;
+    right: 0;
+    transform: translateX(-80%);
+    width: 68px;
+    height: 68px;
+    background-image: url('../image/Iconbookking.png');
+    background-size: cover;
+    
+}
+
+.contents .rights {
+    display: flex;
+    flex-direction: column;
+    width: 509px;
+    height: 845px;
+    border: 2px solid white;
+    position: absolute;
+    left: 755px;
+    top: 70px;
+    padding: 30px;
+    margin: auto;
+    background: #FFFFFF;
+    color: #3C4852;
+    border-radius: 10px;
+}
+
+.contents .rights .progressBar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-self: stretch;
+    font-weight: 400;
+}
+
+.contents .rights .progressBar .one {
+    text-align: center;
+    order: 1;
+}
+
+.contents .rights .progressBar .two {
+    text-align: center;
+    order: 2;
+}
+
+.contents .rights .progressBar .number {
+    width: 38px;
+    height: 38px;
+}
+
+.contents .rights .progressHeader {
+    text-align: center;
+    font-weight: 600;
+}
+
+.inputcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 501px;
+    height: 308px;
+
+}
+
+.inputcontainer .inputfield {
+    width: 501px;
+    height: 60px;
+    border: 2px solid #BEBEBE;
+    box-sizing: border-box;
+    /* text-align: center; */
+    margin: auto;
+    isolation: isolate;
+    /* color: white; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    align-self: stretch;
+    
+}
+
+.inputcontainer .inputfield:focus {
+    border: 2px solid #47BA68;
+}
+
+#disabled {
+    background: #E7E7E7;
+    border: 2px solid #BEBEBE;
+
+}
+
+.order {
+    order: 0;
+}
+
+.order1{
+    order: 1;
+    border: 2px solid #47BA68;
+}
+
+.order2 {
+    order: 2;
+}
+
+.order3 {
+    order: 3;
+}
+
+.order4 {
+    order: 4;
+}
+
+.inputcontainer .inputfield #expire {
+    width: 28px;
+    height: 28px;
+    margin-top: 10px;
+    margin-right: 18px;
+}
+
+.inputcontainer .inputfield .textformat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 425px;
+    height: 33px;
+    
+}
+
+.inputcontainer .inputfield .textformat .rightprice {
+    display: flex;
+    flex-direction: column;
+    width: 71px;
+    height: 33px;
+   
+}
+
+.inputcontainer .inputfield .textformat .rightprice .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 62px;
+    height: 19px;
+}
+
+.inputcontainer .inputfield .textformat .rightprice .text {
+    font-size: 12px;
+}
+
+.inputcontainer .inputfield .textformat .rightprice .number {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.inputcontainer .inputfield .textformat .rightprice .bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.inputcontainer .inputfield .textformat .rightprice .bottom .pricetag {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.inputcontainer .inputfield .textformat .rightprice .bottom .month {
+    font-size: 10px;
+    margin-top: 0;
+}
+
+.inputcontainer .inputfield .textformat .statement {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.inputcontainer .inputfield .float {
+    background: #F77171;
+    position: absolute;
+    z-index: 2;
+    left: 90px;
+    top: 214px;
+    border-radius: 0px 0px 4px 4px;
+    color: white;
+
+}
+
+.inputcontainer .inputfield .float1 {
+    background: green;
+    position: absolute;
+    z-index: 2;
+    left: 90px;
+    top: 289px;
+    border-radius: 0px 0px 4px 4px;
+    color: white;
+
+
+}
+
+
+
+.summarycontainer {
+    border-top: 2px solid #BEBEBE;
+    margin-top: 20px;
+    width: 501px;
+    height: 180px;
+    align-items: center;
+    padding: 16px 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.summarycontainer .para {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 453px;
+    height: 24px;
+    font-weight: 500;
+}
+
+.summarycontainer .limited {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+    border: 2px solid #DE4313;
+    background: linear-gradient(135deg, rgba(222, 67, 19, 0.2) 0%, rgba(222, 67, 19, 0.2) 0.75%, rgba(222, 67, 19, 0.2) 2.92%, rgba(222, 68, 20, 0.2) 6.37%, rgba(223, 69, 21, 0.2) 10.97%, rgba(223, 72, 22, 0.2) 16.59%, rgba(224, 75, 24, 0.2) 23.1%, rgba(225, 80, 27, 0.2) 30.37%, rgba(227, 86, 31, 0.2) 38.27%, rgba(229, 94, 36, 0.2) 46.66%, rgba(231, 104, 43, 0.2) 55.41%, rgba(235, 117, 51, 0.2) 64.39%, rgba(238, 132, 60, 0.2) 73.47%, rgba(243, 149, 71, 0.2) 82.52%, rgba(248, 169, 84, 0.2) 91.41%, rgba(254, 193, 99, 0.2) 100%);
+    width: 501px;
+    height: 76px;
+    padding: 12px 24px;
+    border-radius: 8px;
+
+}
+
+.summarycontainer .limited .alertheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 453px;
+    height: 24px;
+    padding: 0px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.summarycontainer .limited .alertbody {
+    margin: -10px;
+    font-weight: 400;
+}
+
+.summarycontainer .limited .alertbody .ul .li {
+    list-style: none;
+}
+
+.summarycontainer .limited .alertbody .ul .li::before {
+    content: "";
+    position: absolute;
+    left: 81px;
+    transform: translateX(-80%);
+    width: 20px;
+    height: 20px;
+    background-image: url('../image/Icon\ Clocktimer.png');
+    background-size: cover;
+
+}
+
+.summarycontainer .textcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 453px;
+    height: 24px;
+
+}
+
+.buttoncontainer {
+    width: 501px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttoncontainer .btn2 {
+    box-sizing: border-box;
+    width: 242.5px;
+    height: 56px;
+    /* border: 2px solid #F77171; */
+    padding: 10px 42px;
+    border-radius: 4px;
+    font-weight: 700;
+
+
+}
+.buttoncontainer .bgcolor{
+    border: 2px solid #F77171;
+    color: #F77171 ;
+    background-color: white;
+}
+.buttoncontainer .primary{
+    background: #47BA68;
+    color: white;
+}
+.iconcontainer{
+    margin-top: 25px;
+}
+.iconcontainer .razor{
+    width: 120px;
+    height: 43px;
+}
