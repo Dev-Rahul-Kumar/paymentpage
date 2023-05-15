@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./style/mainpage.css";
-// import book from './image/Group 20books.jpg'
 import one from "./image/Icon 1one.png";
 import two from "./image/Icon 1two.png";
 import razorpay from "./image/Razorpay Iconrazorpay.png";
@@ -134,7 +133,7 @@ export default function Mainpage() {
                 type="radio"
                 name="radio"
                 id="expire"
-                // onClick={handleonclick(2)}
+                
               />
               <div className="textformat">
                 <p className="statement">6 Months Subscription </p>
@@ -156,7 +155,7 @@ export default function Mainpage() {
                 type="radio"
                 name="radio"
                 id="expire"
-                // onClick={handleonclick(3)}
+                
               />
               <div className="textformat">
                 <p className="statement">3 Months Subscription </p>

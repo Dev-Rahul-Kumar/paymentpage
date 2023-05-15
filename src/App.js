@@ -1,16 +1,25 @@
-
 import './App.css';
 import Navbar from './component/Navbar'
 import Mainpage from './component/Mainpage'
-// import SubscriptionPage from './component/SubscriptionPage';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Mainpage/>
-      {/* <SubscriptionPage/> */}
+
+      <Router>
+        
+          <Navbar />
+          <Routes>
+            <Route exact path='/' element={<Mainpage />} />
+            
+
+          </Routes>
+        
+      </Router>
+      
     </>
   );
 }
