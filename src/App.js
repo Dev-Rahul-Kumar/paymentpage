@@ -4,6 +4,7 @@ import Navbar from './component/Navbar'
 import Mainpage from './component/Mainpage'
 // import SubscriptionPage from './component/SubscriptionPage';
 
+
 function App() {
   return (
     <>

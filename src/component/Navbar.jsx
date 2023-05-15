@@ -10,11 +10,11 @@ export default function Navbar() {
           <div className="left">
             <img className="img" src={ads}  alt="ads" />
             <div className="dropdown">
-              <button class="dropbtn">
+              <button className="dropbtn">
                 Course
-                <i class="fa fa-caret-down"></i>
+                <i className="fa fa-caret-down"></i>
               </button>
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>

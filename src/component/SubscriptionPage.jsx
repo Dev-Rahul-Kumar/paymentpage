@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 
 const SubscriptionPage = () => {
-  const [selectedPlan, setSelectedPlan] = useState(null);
+  const [selectedPlan, setSelectedPlan] = useState([]);
+  const [discountprice,setDiscountprice] = useState()
 
   const handlePlanSelection = (plan) => {
     setSelectedPlan(plan);
+    if(selectedPlan){
+      const discount = selectedPlan.price/2;
+      console.log(discount);
+      setDiscountprice(discount)
+
+
+    }
   };
 
   const handleSubscription = () => {
@@ -21,6 +29,7 @@ const SubscriptionPage = () => {
     { id: 2, name: 'Standard', price: 19.99 },
     { id: 3, name: 'Premium', price: 29.99 },
   ];
+  console.log(selectedPlan);
 
   return (
     <div>
@@ -40,7 +49,7 @@ const SubscriptionPage = () => {
           
         ))}
       </div>
-      <div className="price">{selectedPlan.price}</div>
+      <div className="price">Your total price after discount is {discountprice}</div>
       <button onClick={handleSubscription}>Subscribe</button>
     </div>
   );
